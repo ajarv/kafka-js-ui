@@ -1,10 +1,11 @@
+### Kafka UI using JS
 
-
+Build and Run
 
 ```bash
-
+docker built -t  kafka-monitor-util:1.0.0 .
 # Run On your laptop
-docker run --rm -p 3000:3000 sdartifact.td.teradata.com:7001/vantage-streams/kafka-monitor-util:1.0.0
+docker run --rm -p 3000:3000 kafka-monitor-util:1.0.0
 
 ```
 
