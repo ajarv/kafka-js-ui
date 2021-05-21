@@ -12,7 +12,9 @@ router.post('/connect',async function(req, res, next) {
   try{
     const kafka = new Kafka({
       clientId: 'my-app',
-      brokers: req.body.brokers
+      brokers: req.body.brokers,
+      requestTimeout: 15000,
+      connectionTimeout: 15000
     })
     const admin = kafka.admin()
     await admin.connect()
